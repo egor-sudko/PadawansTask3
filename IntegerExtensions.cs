@@ -6,6 +6,8 @@ namespace PadawansTask3
     {
         public static int Gcd(int a, int b)
         {
+            a = Math.Abs(a);
+            b = Math.Abs(b);
             if (a != b)
             {
                 while (a != b)
