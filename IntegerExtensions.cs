@@ -8,7 +8,7 @@ namespace PadawansTask3
         {
             a = Math.Abs(a);
             b = Math.Abs(b);
-            if (a != b)
+            if (a != 0 && b != 0)
             {
                 while (a != b)
                 {
@@ -21,6 +21,10 @@ namespace PadawansTask3
                         b = b - a;
                     }
                 }
+            }
+            else
+            {
+                throw new ArgumentException();
             }
             return a;
         }
